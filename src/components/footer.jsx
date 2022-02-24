@@ -24,7 +24,7 @@ function Footer() {
                 <ul style={{
                     color: "#fff"
                 }}>
-                    <li>portfolio</li>
+                    <li>brand partners</li>
                     <li>White Papers</li>
                     <li>Terms of Service</li>
                     <li>Privacy Policy</li>

@@ -8,7 +8,7 @@
 }
 
 .App-header {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(142, 37, 37, 0.5);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -35,4 +35,10 @@
 
 section {
     height: 100vh;
+}
+
+.connect {
+  font-size: 12px;
+  font-weight: 200;
+  text-transform: lowercase;
 }

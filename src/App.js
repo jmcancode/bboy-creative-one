@@ -6,12 +6,13 @@ import Footer from "./components/Footer"
 // react-icons
 import {AiOutlineDown} from 'react-icons/ai';
 
-
 function App() {
-  const brbRef = useRef(null);
-  const executeScroll = () => brbRef.current.scrollIntoView();
-  
-  return (
+    const brbRef = useRef(null);
+    const executeScroll = () => brbRef
+        .current
+        .scrollIntoView();
+
+    return (
         <Fragment>
             <section className="App">
                 <header className="App-header">
@@ -20,22 +21,27 @@ function App() {
                     </video>
                     <div style={{
                         padding: '55px'
-                    }} >
+                    }}>
                         <h1 className="App-title">bboy creative</h1>
-                        <small>Web / Mobile / Web3 / Strategy</small>
+                        <small className="App-description">Web / Mobile / Web3 / Strategy</small>
                     </div>
-                    <a  onClick={executeScroll}  href="#content">
+                    <a onClick={executeScroll} href="#content">
                         <AiOutlineDown/>
                     </a>
                 </header>
             </section>
-            <section  ref={brbRef} id="#content">
+            <section ref={brbRef} id="#content">
                 <div className="App-header">
                     <div>
-                        <p style={{textTransform: "lowercase", fontWeight: "200"}}>Our production schedule is closed for 2022.</p>
+                        <p
+                            style={{
+                            textTransform: "lowercase",
+                            fontWeight: "200"
+                        }}>Our production schedule is closed for 2022.
+                        </p>
                     </div>
                     <div>
-                      <p className="connect">Scroll to connect with us</p>
+                        <p className="connect">Scroll to connect with us</p>
                     </div>
                 </div>
             </section>
