@@ -7,6 +7,7 @@ import Footer from "./components/Footer"
 import {AiOutlineDown} from 'react-icons/ai';
 
 function App() {
+  const topRef = useRef(null);
     const brbRef = useRef(null);
     const executeScroll = () => brbRef
         .current
@@ -14,7 +15,7 @@ function App() {
 
     return (
         <Fragment>
-            <section className="App">
+            <section ref={topRef} className="App">
                 <header className="App-header">
                     <video loop autoPlay muted id="video">
                         <source src={backgroundVideo} type="video/mp4"/>
@@ -45,7 +46,7 @@ function App() {
                     </div>
                 </div>
             </section>
-            <Footer/>
+            <Footer />
         </Fragment>
     );
 }
