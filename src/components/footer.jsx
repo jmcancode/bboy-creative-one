@@ -18,7 +18,7 @@ function Footer() {
                     color: "#fff"
                 }}>
                     <li>
-                      <a href="mailto:info@bboycreative.com">
+                      <a href="mailto:jm@bboycreative.com">
                       email
                       </a>
                       </li>
