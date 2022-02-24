@@ -14,6 +14,7 @@ function Footer() {
                 <ul style={{
                     color: "#fff"
                 }}>
+                    <li>email</li>
                     <li>Instagram</li>
                     <li>LinkedIn</li>
                     <li>Twitter</li>
@@ -23,7 +24,8 @@ function Footer() {
                 <ul style={{
                     color: "#fff"
                 }}>
-                    <li>Email Us</li>
+                    <li>portfolio</li>
+                    <li>White Papers</li>
                     <li>Terms of Service</li>
                     <li>Privacy Policy</li>
                 </ul>

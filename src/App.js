@@ -34,6 +34,9 @@ function App() {
                     <div>
                         <p style={{textTransform: "lowercase", fontWeight: "200"}}>Our production schedule is closed for 2022.</p>
                     </div>
+                    <div>
+                      <p className="connect">Scroll to connect with us</p>
+                    </div>
                 </div>
             </section>
             <Footer/>
