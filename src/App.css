@@ -1,12 +1,14 @@
-
 #video {
     position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
     z-index: -1;
-    width: 100%;
 }
 
 .App-header {
-  background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,16 +16,23 @@
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
+    text-align: center;
 }
 
-.App-title{
-  font-weight: bold;
-  font-family: "Helvetica Neue",
+.App-title {
+    font-weight: bold;
+    font-family: "Helvetica Neue";
+    text-transform: lowercase;
+    font-size: 4em;
 }
 
 .App-description {
-  font-weight: 300;
-  font-size: 16px;
-  text-transform: uppercase;
-  
+    font-weight: 300;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+
+section {
+    height: 100vh;
 }

@@ -1,21 +1,43 @@
+import {Fragment, useRef} from 'react';
 import './App.css';
 // custom components
-import backgroundVideo from "./assets/bboy.mp4"
+import backgroundVideo from "./assets/bboy.mp4";
+import Footer from "./components/Footer"
+// react-icons
+import {AiOutlineDown} from 'react-icons/ai';
+
 
 function App() {
-    return (
-        <div className="App">
-
-            <header className="App-header">
-                <video loop autoPlay muted id="video">
-                    <source src={backgroundVideo} type="video/mp4"/>
-                </video>
-                <div>
-                    <h1 className="App-title">bboy creative</h1>
+  const brbRef = useRef(null);
+  const executeScroll = () => brbRef.current.scrollIntoView();
+  
+  return (
+        <Fragment>
+            <section className="App">
+                <header className="App-header">
+                    <video loop autoPlay muted id="video">
+                        <source src={backgroundVideo} type="video/mp4"/>
+                    </video>
+                    <div style={{
+                        padding: '55px'
+                    }} >
+                        <h1 className="App-title">bboy creative</h1>
+                        <small>Web / Mobile / Web3 / Strategy</small>
+                    </div>
+                    <a  onClick={executeScroll}  href="#content">
+                        <AiOutlineDown/>
+                    </a>
+                </header>
+            </section>
+            <section  ref={brbRef} id="#content">
+                <div className="App-header">
+                    <div>
+                        <p style={{textTransform: "lowercase", fontWeight: "200"}}>Our production schedule is closed for 2022.</p>
+                    </div>
                 </div>
-              
-            </header>
-        </div>
+            </section>
+            <Footer/>
+        </Fragment>
     );
 }
 
