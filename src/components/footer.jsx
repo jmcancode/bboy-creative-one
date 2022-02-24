@@ -1,5 +1,4 @@
 import React from 'react'
-import {AiOutlineArrowUp} from 'react-icons/ai'
 // custom styles
 import "./styles/Footer.css"
 function Footer() {
@@ -14,7 +13,7 @@ function Footer() {
                     className="footer-logo"/>
             </div>
             <div>
-                <ul style={{
+                <ul className="footer-lists" style={{
                     color: "#fff"
                 }}>
                     <li>
@@ -35,7 +34,7 @@ function Footer() {
                 </ul>
             </div>
             <div>
-                <ul style={{
+                <ul className="footer-lists" style={{
                     color: "#fff"
                 }}>
                     <li>brand partners</li>

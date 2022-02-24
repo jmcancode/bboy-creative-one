@@ -11,7 +11,7 @@
     height: 100px;
 }
 
-ul {
+.footer-lists {
     list-style: none;
 }
 
@@ -27,4 +27,24 @@ li:hover {
 
 a {
     text-decoration: none;
+}
+
+@media screen and (max-width: 425px) {
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+    }
+
+   .footer-lists {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-logo {
+        height: 80px;
+    }
 }
