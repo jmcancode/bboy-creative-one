@@ -26,7 +26,8 @@ li:hover {
 }
 
 a {
-    text-decoration: none;
+    text-decoration: none !important;
+    color: #fff !important;
 }
 
 @media screen and (max-width: 425px) {
