@@ -6,13 +6,23 @@
     justify-content: space-around;
     align-items: center;
 }
-
-.footer-logo {
-    height: 100px;
+.base-nav{
+    background-color: rgb(0,0,0, 0.9);
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items:center;
 }
 
+
 .footer-lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     list-style: none;
+   
 }
 
 li {
@@ -34,7 +44,7 @@ a {
     .footer-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
+        justify-content: space-between;
 
     }
 
