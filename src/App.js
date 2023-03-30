@@ -2,7 +2,7 @@ import { Fragment, useRef } from "react";
 import "./App.css";
 // custom components
 import backgroundVideo from "./assets/bboy.mp4";
-import Footer from "./components/Footer.jsx";
+import Footer from "./components/Footer";
 // react-icons
 import { AiOutlineDown } from "react-icons/ai";
 
@@ -50,7 +50,9 @@ function App() {
           </div>
         </div>
       </section>
-      <Footer />
+      <section>
+        <Footer />
+      </section>
     </Fragment>
   );
 }
