@@ -27,7 +27,7 @@ function App() {
           >
             <h1 className="App-title">bboy creative</h1>
             <small className="App-description">
-              Web / Mobile / Web3 / Strategy
+              Web / Mobile / Strategy
             </small>
           </div>
           <a onClick={executeScroll} href="#content">
