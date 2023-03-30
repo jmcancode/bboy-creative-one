@@ -2,7 +2,7 @@ import { Fragment, useRef } from "react";
 import "./App.css";
 // custom components
 import backgroundVideo from "./assets/bboy.mp4";
-import Footer from "./components/Footer.jsx"
+import Footer from "./components/Footer.jsx";
 // react-icons
 import { AiOutlineDown } from "react-icons/ai";
 // bootstrap reqs
@@ -26,9 +26,7 @@ function App() {
             }}
           >
             <h1 className="App-title">bboy creative</h1>
-            <small className="App-description">
-              Web / Mobile / Strategy
-            </small>
+            <small className="App-description">Web / Mobile / Strategy</small>
           </div>
           <a onClick={executeScroll} href="#content">
             <AiOutlineDown />
@@ -37,7 +35,7 @@ function App() {
       </section>
       <section ref={brbRef} id="#content">
         <div className="App-header">
-          <div style={{padding: 150}}>
+          <div style={{ padding: 150 }}>
             <p
               style={{
                 textTransform: "lowercase",

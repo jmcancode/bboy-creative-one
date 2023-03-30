@@ -1,8 +1,7 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, Fragment } from "react";
 // react-icons
 import { AiFillInstagram, AiFillLinkedin, AiFillMail } from "react-icons/ai";
-// web3
-import { injected } from "./connectors";
+
 // custom styles
 import "./styles/Footer.css";
 // react-bootstrap
@@ -126,14 +125,7 @@ function Footer() {
             <li>
               <a href="mailto:jm@bboycreative.com">pricing</a>
             </li>
-            <li>
-              {/* <a
-                            href="https://twitter.com/bboycreative"
-                            rel="noreferrer noopener"
-                            target="_blank">
-                            send ethereum
-                        </a> */}
-            </li>
+            <li></li>
           </ul>
         </div>
       </nav>
