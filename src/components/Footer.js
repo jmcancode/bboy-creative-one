@@ -85,7 +85,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.instagram.com/bboycreative.eth/"
+                href="https://www.instagram.com/bboycreative.io/"
                 rel="noreferrer noopener"
                 target="_blank"
               >
