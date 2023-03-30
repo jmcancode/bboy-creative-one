@@ -1,13 +1,7 @@
 import React, { useState, useEffect, Fragment } from "react";
 // react-icons
-import {
-  AiFillTwitterCircle,
-  AiFillInstagram,
-  AiFillLinkedin,
-  AiFillMail,
-} from "react-icons/ai";
+import { AiFillInstagram, AiFillLinkedin, AiFillMail } from "react-icons/ai";
 // web3
-import { useWeb3React } from "@web3-react/core";
 import { injected } from "./connectors";
 // custom styles
 import "./styles/Footer.css";
@@ -51,56 +45,9 @@ function MyVerticallyCenteredModal(props) {
 function Footer() {
   const [modalShow, setModalShow] = useState(false);
 
-  const { active, account, library, connector, activate, deactivate } =
-    useWeb3React();
-
-  async function connect() {
-    try {
-      await activate(injected);
-      localStorage.setItem("isWalletConnected", true);
-    } catch (ex) {
-      console.log(ex);
-    }
-  }
-
-  async function disconnect() {
-    try {
-      deactivate();
-      localStorage.setItem("isWalletConnected", false);
-    } catch (ex) {
-      console.log(ex);
-    }
-  }
-
-  useEffect(() => {
-    const connectWalletOnPageLoad = async () => {
-      if (localStorage?.getItem("isWalletConnected") === "true") {
-        try {
-          await activate(injected);
-          localStorage.setItem("isWalletConnected", true);
-        } catch (ex) {
-          console.log(ex);
-        }
-      }
-    };
-    connectWalletOnPageLoad();
-  }, []);
-
   return (
     <Fragment>
       <nav className="footer-container">
-        <div className="p-4">
-          {active ? (
-            <span style={{ color: "#c60000" }}>
-              wallet address: <span className="text-truncate">{account}</span>
-            </span>
-          ) : (
-            <span style={{ color: "#fff" }}>
-              Lets build the future together.
-            </span>
-          )}
-        </div>
-
         <div>
           <ul
             className="footer-lists"

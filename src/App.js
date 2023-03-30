@@ -1,8 +1,8 @@
-import { Fragment, useRef, useEffect } from "react";
+import { Fragment, useRef } from "react";
 import "./App.css";
 // custom components
 import backgroundVideo from "./assets/bboy.mp4";
-import Footer from "./components/Footer";
+import Footer from "./components/Footer.jsx"
 // react-icons
 import { AiOutlineDown } from "react-icons/ai";
 // bootstrap reqs
